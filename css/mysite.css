@@ -437,7 +437,12 @@ header ol {
 }
 header li {
     display: inline;
-    padding: 2em;
+    padding: 1em 1em 0.337em 1em;
+}
+#search {
+    float: right;
+    padding: 1em 1em 0.337em 1em;
+    margin-top: -3.2em;
 }
 a {
     text-decoration: none;
@@ -445,17 +450,96 @@ a {
 }
 form {
     margin: 2em auto;
-    width: 60%;
+    width: 40%;
     border: 1px solid #333;
     border-radius: 1em;
     padding: 0.677em;
     background-color: #f2f2f2;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
+    box-shadow:         3px 3px 5px 6px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
 }
 form input {
     line-height: 1.677em;
-    width: 100%;
+    width: 80%;
     margin-bottom: 0.677em;
+    border-radius: 0.266em;
+
 }
 .short {
     width: 6%;
+}
+section img {
+    top: 0;
+    max-width: 100%;
+}
+#cta {
+    margin-top: -27em;
+    color: #fff;
+    padding: 2em;
+    width: 30%;
+    text-shadow: 2px 2px #000;
+}
+#browse {
+    text-align: center;
+    width: 100%;
+    margin-top: 10em;
+}
+
+/* ---------------------------footer----------------------------- */
+
+/*setting height for footer*/
+footer {
+    height: 30%;
+    clear: both;
+    margin: auto auto 0% auto;
+    border-top: 0.167em solid #000;
+    bottom: 0%;
+}
+
+.gradient {
+    background-image:
+        linear-gradient(
+            #3c3c3c, #222
+        );
+}
+
+#footerContent {
+    width: 80%;
+    margin: auto;
+}
+
+footer ul {
+    float: left;
+}
+
+#contact:before{
+    content:attr(data-header);
+    font-weight:bold;
+    display: block;
+}
+
+#resource:before{
+    content:attr(data-header);
+    font-weight:bold;
+}
+/*changing links to remove underline and setting color*/
+#resource a {
+    color: #000;
+    text-decoration: none;
+}
+/*setting margin for links and removing the list bullet points*/
+#resource > li {
+    list-style-type: none;
+    border-left: 0.063em solid #785666;
+    padding-left: 0.938em;
+}
+
+#contact {
+    margin-right: 3.125em;
+}
+
+#contact > li {
+    display: inline;
+    list-style-type: none;
 }
