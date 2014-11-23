@@ -497,6 +497,22 @@ body {
         );
 }
 
+#wrapper {
+    width: 80%;
+    margin: auto;
+}
+#wrapper figure {
+    margin: 2em 0em 2em 0em;
+}
+#wrapper img {
+    float: left;
+}
+#wrapper figcaption {
+    float: left;
+    width: 60%;
+    padding: 1em;
+}
+
 
 /* ---------------------------footer----------------------------- */
 
