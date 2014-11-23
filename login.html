@@ -26,16 +26,19 @@
         <input type="text" name="search">
         <button class="btn-primary">Search</button>
     </div>
-    <form>
-        <h3>Log In</h3>
-        <label for="username">Username:</label><br/>
-        <input id="username" type="text" name="username" required="required"><br/>
-        <label for="password">Password:</label><br/>
-        <input id="password" name="password" type="text" required="required"><br/>
-        <label><input type="checkbox" name="remember" value="remember" class="short">Remember me?</label><br/>
-        <button type="button" id="signInButton" name="signInButton" class="btn-primary">SIGN IN</button>
-        <p><a href="#">Forgot Username/Password?</a></p>
-    </form>
+    <div id="wrapper">
+        <form id="login">
+            <h3>Log In</h3>
+            <label for="username">Username:</label><br/>
+            <input id="username" type="text" name="username" required="required"><br/>
+            <label for="password">Password:</label><br/>
+            <input id="password" name="password" type="text" required="required"><br/>
+            <input id="remember" type="checkbox" name="remember" value="remember" class="short">
+            <label for="remember">Remember me?</label><br/>
+            <button type="button" id="signInButton" name="signInButton" class="btn-primary">SIGN IN</button>
+            <p><a href="#">Forgot Username/Password?</a></p>
+        </form>
+    </div>
     <footer class="gradient">
         <div id="footerContent">
             <ul data-header="CONTACT" id="contact">

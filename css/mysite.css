@@ -442,10 +442,10 @@ header li {
 }
 #search {
     float: right;
-    padding: 1em 1em 0.337em 1em;
+    padding: 1em 1em 0em 1em;
     margin-top: -3.2em;
 }
-a {
+header a {
     text-decoration: none;
     color: #fff;
 }
@@ -468,11 +468,14 @@ form input {
 
 }
 .short {
-    width: 6%;
+    width: 5%;
 }
 section img {
     top: 0;
     max-width: 100%;
+}
+#login {
+    margin: 10em auto 13em auto;
 }
 #cta {
     margin: -36em 0 2em 0;
@@ -487,10 +490,17 @@ section img {
     margin-top: 13em;
     clear: both;
 }
+body {
+    background-image:
+        linear-gradient(
+            white, #dbd9d9
+        );
+}
+
 
 /* ---------------------------footer----------------------------- */
-/* why is this not working?!???????*/
-#myFooter {
+
+footer {
     background: #686868; /* Old browsers */
     background: -moz-linear-gradient(top,  #686868 0%, #0e0e0e 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#686868), color-stop(100%,#0e0e0e)); /* Chrome,Safari4+ */
@@ -499,21 +509,21 @@ section img {
     background: -ms-linear-gradient(top,  #686868 0%,#0e0e0e 100%); /* IE10+ */
     background: linear-gradient(to bottom,  #686868 0%,#0e0e0e 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#686868', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-9 */
-}
-/*setting height for footer*/
-footer {
     height: 30%;
     clear: both;
-    margin: auto auto 0% auto;
-    border-top: 0.167em solid #000;
-    bottom: 0%;
+    margin: 1em auto 0em auto;
+    bottom: 0;
+    color: #fff;
+    overflow: hidden;
 }
+
 
 #footerContent {
     width: 80%;
     margin: auto;
+    padding: 2em;
 }
-
+/* background color won't work because of float?! */
 footer ul {
     float: left;
 }
@@ -530,7 +540,7 @@ footer ul {
 }
 /*changing links to remove underline and setting color*/
 #resource a {
-    color: #000;
+    color: #fff;
     text-decoration: none;
 }
 /*setting margin for links and removing the list bullet points*/
@@ -540,9 +550,6 @@ footer ul {
     padding-left: 0.938em;
 }
 
-#contact {
-    margin-right: 3.125em;
-}
 
 #contact > li {
     display: inline;
